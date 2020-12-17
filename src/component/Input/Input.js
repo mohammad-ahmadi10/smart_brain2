@@ -92,7 +92,7 @@ const {
                 setInputValue(url);
                 changeImageOnInputChange();
             });
-        }, 500);
+        }, 1000);
         let putButtonWrapper = putContainerRef.current;
         let putButton = document.querySelector("#put-button");
         putButtonWrapper.classList.add("deaktive-put-putton");
