@@ -1,0 +1,25 @@
+.btn-div{
+  z-index: 4;
+  
+}
+
+.middle-wrapper{
+  display: flex;
+  background-color: blue;
+}
+
+#default-section{
+  height: 0;
+  z-index: 10000;
+}
+
+#tsparticles{
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: -10000;
+}
+
+

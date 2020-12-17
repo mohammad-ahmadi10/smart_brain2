@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+#profile-nav-section{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    right: 0px;
+    top: 45px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-nav-section-deactive{
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.profile-nav-section-active{
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    visibility: visible;
+}
+
+
+
+.profile-container{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image-container{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    position: relative;
+    top: -20px;
+}
+
+.profile-image-container::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    transition: 0.5s ease background-color;
+    cursor: pointer;
+}
+.profile-image-container:hover:after{
+    background-color: rgba(99, 93, 93, 0.185);
+    bottom: 0px;
+    box-shadow: 0px 0px 50px 0.5px rgba(221, 176, 27, 0.486);
+}
+.profile-container img{
+    border-radius: 50%;
+    width: 100%;
+    height:100%;
+}
+
+#edit-container{
+    width: 60px;
+    height:25px;
+    bottom:5px;
+    left: 56px;
+    position: absolute;
+    background-color: transparent;
+    transition: 0.5s ease all;
+}
+.active-edit-span{
+    font-size: 2rem;
+    color:rgb(24, 26, 24);
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    opacity: 1;
+    transition: 1s ease opacity;
+}
+.deactive-edit-span{
+    opacity: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgb(92, 87, 87);
+    letter-spacing: 0.2rem;
+    transition: 1s ease opacity;
+}
+
+.profile-texts{
+    position: relative;
+    top:0px;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-texts p{
+    color: white;
+    margin:0;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 0.2rem;
+}
+
+.profile-texts .profile-username{
+    top: -10px;
+    font-size: 2.5rem;
+    position: absolute;
+}   
+
+.profile-texts .profile-email{
+    top: 40px;
+    font-size: 1.8rem;
+    position: absolute;
+}
+
+.profile-texts .profile-manage{
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.profile-texts .profile-signOut{
+    position: relative;
+    bottom:-105px;
+    left: -2px;
+    font-size:2rem;
+    cursor: pointer;
+}
+.profile-texts .profile-manage:hover,
+.profile-texts .profile-signOut:hover{
+    color: rgb(43, 43, 216);
+
+}
+
+
+
+
+
+/* For Mobile */
+@media all and (min-width: 500px) and (max-width:800px) {
+    #profile-nav-section{
+        top: 35px;
+       
+    }
+}   
+
+/* For Tablets */
+@media all and (min-width: 800px) and (max-width: 1000px) {
+   
+
+}   

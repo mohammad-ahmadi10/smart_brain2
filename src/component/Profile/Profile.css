@@ -1,0 +1,160 @@
+#out-section{
+    position: absolute;
+    background-color: rgba(29, 27, 27, 0.63);
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: show 0.4s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#out-container{
+    position: absolute;
+    height: 650px;
+    width: 600px;
+    display:flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(224, 218, 218);
+}
+
+#dropzone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;    
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.dropzone-section,
+.dropzone-inner-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropzone-inner-container > span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 2px grey ;
+    border-radius: 15px;
+}
+
+#img-container{
+    background-color: rgba(13, 32, 85, 0.555);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+#img-container img{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+
+.cropper-modal{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.8 !important;
+}
+
+#cropper-container{
+    width: 600px;
+    height: 500px;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.cropper-face{
+    border-radius: 50% !important;
+    opacity: 0.3 !important;
+}
+
+.cropper-wrap-box{
+    border-radius: 10pX;
+}
+
+
+.btn-section{
+    position: relative;
+}
+.btn-warning{
+    width: 150px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(194, 157, 36);
+}
+.btn-warning:hover{
+    background-color: rgb(161, 132, 35);
+}
+
+.cross-icon{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    color: rgb(235, 15, 15);
+    cursor: pointer;
+}
+/* .cropper-drag-box .cropper-crop .cropper-modal,
+.cropper-crop-box,
+.cropper-view-box,
+.cropper-modal,
+.cropper-hide,
+.cropper-wrap-box,
+.cropper-canvas{
+    border-radius: 50% !important;
+} */
+.cropper-view-box{
+    border-radius: 50%;
+}
+/* .cropper-canvas
+{
+
+    width: 100% !important;
+    height: 100% !important;
+    transform : translateX(0px) !important;
+}
+.cropper-wrap-box{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} */

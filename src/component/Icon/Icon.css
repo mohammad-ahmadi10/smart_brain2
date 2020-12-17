@@ -1,0 +1,23 @@
+.Tilt{
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    z-index: 10;
+}
+
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .Tilt-inner img{
+      width: 75px;   
+      position: absolute;
+      left: -30px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .Tilt-inner img{
+        width: 100px;  
+      }
+}

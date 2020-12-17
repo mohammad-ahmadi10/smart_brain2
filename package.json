@@ -1,0 +1,64 @@
+{
+  "name": "face-detection",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^1.1.1",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.0",
+    "b64-to-blob": "^1.2.19",
+    "bootstrap": "^4.5.3",
+    "clarifai": "^2.9.1",
+    "firebase": "^8.0.0",
+    "hookrouter": "^1.2.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "react-cropper": "^2.1.4",
+    "react-dom": "^16.14.0",
+    "react-dropzone": "^11.2.4",
+    "react-fontawesome": "^1.7.1",
+    "react-hook-form": "^6.12.2",
+    "react-icons": "^3.11.0",
+    "react-image-file-resizer": "^0.3.8",
+    "react-images-upload": "^1.2.8",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-tilt": "^0.1.4",
+    "react-tsparticles": "^1.18.4",
+    "serve": "^11.3.2",
+    "url-exists": "^1.0.3",
+    "yup": "^0.32.1"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "exports-loader": "^1.1.1",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^10.0.5"
+  },
+  "proxy": "https://murmuring-chamber-76782.herokuapp.com"
+}

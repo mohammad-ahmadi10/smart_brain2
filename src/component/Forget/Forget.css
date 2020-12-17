@@ -1,0 +1,141 @@
+#forget-container{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(65deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+.forget-section{
+    position:absolute;
+    top: 25%;
+    left:36%;
+    width: 400px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(30deg, rgba(255,255,255,0.8662815467984069) 0%, rgba(255,255,255,0.8718837876947654) 28%, rgba(255,255,255,0.8746849081429446) 62%, rgba(255,255,255,0.6001751042213761) 100%);
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+
+.forget-text{
+    width: 90%;
+    padding: 2px;   
+}
+.forget-text h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.forget-text hr{
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.forget-text p{
+    font-size: 15px;
+}
+
+
+.forget-input{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px; 
+}
+
+.forget-input p{
+    margin: 2px 0;
+    font-style: italic;
+}
+
+.forget-input input{
+    width: 345px;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 5px;    
+}
+.forget-input input[type="text"]{
+    padding: 0 10px;
+    border: black 1px solid;
+}
+.forget-input input[type="button"]{
+    margin-top: 5px;
+    background-color: transparent;
+    border: orange 1px solid;
+    transition: 0.2s ease-in;
+    transition-property: color background-color;
+}
+.forget-input input[type="button"]:hover{
+    background: linear-gradient(30deg, rgba(185,156,23,0.5301470930168943) 0%, rgba(185,156,23,1) 28%, rgba(185,156,23,1) 62%, rgba(185,156,23,0.6169818269104517) 100%);
+    color: white;
+}
+
+
+/* Mobile */
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    .forget-container{
+        left: 25%;
+        transform: scale(1.05);
+    }
+}
+
+
+@media only screen and (min-width:800px) and (max-width: 1100px){
+    .forget-container{
+        left: 35%;
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width: 1400px){
+    .forget-container{
+        left: 35%;
+        transform: scale(1.2);
+    }
+}
+
+.error-container{
+    font-size: 1.2rem;
+    color: red;
+    margin-top: -7px;
+    margin-left: 2px;
+
+}
+
+.react-icon-back{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile */
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    .forget-section{
+        top: 50%;
+        left:50%;
+        width: 400px;
+        height: 350px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media only screen and (min-width:800px) and (max-width: 1100px){
+    .forget-section{
+        top: 50%;
+        left:50%;
+        width: 400px;
+        height: 350px;
+        transform: translate(-50%, -50%);
+    }
+}

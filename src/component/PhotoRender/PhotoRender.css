@@ -1,0 +1,132 @@
+#photorender-container{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 550px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , 15%);
+    z-index: -1000;
+}
+
+
+.detection-section{
+    width: 700px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#face-crop-container{
+    width: 200px;
+    height: 90%;
+    background-color: white;
+    position: relative;
+}
+
+.wrapper-crop{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 50%;
+}
+.crop-div{
+    
+        object-fit: cover;
+      
+        width: 300px;
+        height: 337px;
+      
+}
+
+
+
+.face-wrapper{
+    min-width: 500px;
+    width:500px;
+    height: 90%;
+    background-color: #262335;
+    border-right: 1px solid #f2c43d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bound_box{
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100px; 
+    cursor: pointer;
+}
+
+.bound_box:hover{
+    background-color: rgba(133, 120, 120, 0.315);
+
+}
+
+#imgUrl{
+    transition: 2s ease-in all;
+}
+
+
+
+#img-wrapper{
+    position: absolute;
+    
+}
+
+
+#img-wrapper img{
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 70%;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+  /* For Mobile */
+  @media all and (min-width: 500px) and (max-width:800px) {
+    .face-crop-container{
+        width: 100px;
+    }
+    
+    .face-wrapper{
+        width: 150px;
+
+    }
+    
+
+    
+
+  }   
+
+/* For Tablets */
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .face-crop-container{
+        width: 150px;
+    }
+    
+    .face-wrapper{
+        width: 300px;
+
+    }
+
+}   
+
+
+/* For laptop */
+@media all  and (min-width: 730px) and (max-width: 935px) {
+
+    
+
+}

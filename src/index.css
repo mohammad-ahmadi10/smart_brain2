@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: 'Indie Flower', cursive, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: transparent;
+}
+a{
+  color: white;
+  font-family:  'EB Garamond', serif;
+}
+
+
+html{
+  background-color: white;
+  margin: 0; 
+  height: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
