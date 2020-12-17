@@ -75,7 +75,7 @@ const checkTheUser = async (res ,email) =>{
                     <a href="https://cryptic-bastion-84659.herokuapp.com/passwordReset/${token}"><strong>Link</strong></a>
                     if you are not ${username} please ignore this Email`
         }
-
+ 
         transprot.sendMail(mailOptions, (err, info) =>{
             if(err){
                 console.log(err)
