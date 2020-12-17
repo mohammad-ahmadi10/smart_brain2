@@ -72,7 +72,7 @@ const checkTheUser = async (res ,email) =>{
             subject:'reseting your password',
             html: ` this Email is sent to you because you want to change your password 
                     <br/>please click on this Link in order to reset your password
-                    <a href="http://localhost:3000/passwordReset/${token}"><strong>Link</strong></a>
+                    <a href="https://stormy-thicket-36361.herokuapp.com/passwordReset/${token}"><strong>Link</strong></a>
                     if you are not ${username} please ignore this Email`
         }
 
