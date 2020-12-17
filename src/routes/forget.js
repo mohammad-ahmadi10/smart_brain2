@@ -5,7 +5,7 @@ const generateUniqueId = require('generate-unique-id');
 const nodemailer = require("nodemailer");
 
 
-const transprot = nodemailer.createTransport({
+const transprot = nodemailer.createTransport( { 
     service: 'gmail',//smtp.gmail.com  //in place of service use host...
     secure: false,//true
     auth: {
