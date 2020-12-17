@@ -131,7 +131,7 @@ const {
                     <ImageUploader
                                 className="uploader"
                                 withIcon={true}
-                                fileContainerStyle={UploaderStyle}
+                                 fileContainerStyle={UploaderStyle}
                                 buttonText="choose & Upload"
                                 onChange={onDrop}
                                 withLabel= {false}
