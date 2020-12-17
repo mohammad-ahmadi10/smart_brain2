@@ -135,7 +135,7 @@ const {
                                 buttonText="choose & Upload"
                                 onChange={onDrop}
                                 withLabel= {false}
-                                imgExtension={['.jpg', '.png']}
+                                imgExtension={['.jpg', '.png', 'jpeg']}
                                 maxFileSize={5242880}
                                 singleImage=  {true}
                                 buttonStyles={{fontFamily:"Arial"}}
