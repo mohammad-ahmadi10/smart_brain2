@@ -40,8 +40,8 @@ const getUserFromDB = (res, email, password) =>{
             const queryProfileText = 'SELECT profile_image FROM profiles WHERE profile_id= $1'
             const valueProfileText = [profile_id]
             const profileResponse = await client.query(queryProfileText, valueProfileText);
-            let img64 = "";
-            let profileImage = "";
+            let img64 = null;
+            let profileImage = null;
             if(profileResponse.rows[0].profile_image){
                 profileImage = profileResponse.rows[0].profile_image;
                 img64 = await convertingBufferToBase64(profileImage);
